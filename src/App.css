@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* New components and their styling */
+
+ .App {
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='70' height='70' patternTransform='scale(3) rotate(95)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(212,100%,94.5%,1)'/><path d='M-4.8 4.44L4 16.59 16.14 7.8M32 30.54l-13.23 7.07 7.06 13.23M-9 38.04l-3.81 14.5 14.5 3.81M65.22 4.44L74 16.59 86.15 7.8M61 38.04l-3.81 14.5 14.5 3.81'  stroke-linejoin='round' stroke-linecap='round' stroke-width='1' stroke='hsla(50,100%,98.8%,1)' fill='none'/><path d='M59.71 62.88v3h3M4.84 25.54L2.87 27.8l2.26 1.97m7.65 16.4l-2.21-2.03-2.03 2.21m29.26 7.13l.56 2.95 2.95-.55'  stroke-linejoin='round' stroke-linecap='round' stroke-width='1' stroke='hsla(36,100%,92.2%,1)' fill='none'/><path d='M58.98 27.57l-2.35-10.74-10.75 2.36M31.98-4.87l2.74 10.65 10.65-2.73M31.98 65.13l2.74 10.66 10.65-2.74'  stroke-linejoin='round' stroke-linecap='round' stroke-width='1' stroke='hsla(212,100%,91.2%,1)' fill='none'/><path d='M8.42 62.57l6.4 2.82 2.82-6.41m33.13-15.24l-4.86-5.03-5.03 4.86m-14-19.64l4.84-5.06-5.06-4.84'  stroke-linejoin='round' stroke-linecap='round' stroke-width='1' stroke='hsla(35,100%,95.7%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>") }
+
+  /*
+.TMDBLogo {
+  background-image: url("/movie-app/public/tmdb-logo.png");
+  width: 15rem;
+  height: 15rem;
+  justify-content: right;
+}
+*/
+
+ .searchbar {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-bottom: -25px;
+ }
+
+ .movies {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  justify-content: center;
+ }
+
+ /* movies is all elements of the MovieCard.js/css files, but best for overall App appearance to do margins/padding here.
+ display:flex is for all iterations of an element within a space. flex-wrap: wrap moves them into a new line/row */
+
+/* SearchBar is site title (movieHeader), searchKeyword, and searchButton */
+
+ .movieHeader {
+  padding-right: 3rem;
+  text-shadow: 5px 5px 5px #61dafb;
+ }
+
+ .searchButton {
+  margin-left: 1rem;
+  width: 100px;
+/*
+  background-color: #61dafb;
+  color:#282c34;
+*/ 
+}
+
+ .searchKeyword {
+  width: 300px;
+ }

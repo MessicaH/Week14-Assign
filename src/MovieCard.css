@@ -1,0 +1,69 @@
+
+  
+.movieCard {
+    box-shadow: 5px 5px 5px #282c34;
+    margin: 1.5rem;
+    background-color: #c2c2c2;
+    max-height: 40rem;
+    width: 15rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+/* Movie poster, release date, title, and ratings */
+
+.movieInfo {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.posterImage {
+    max-height: 20rem;
+    margin-top: 15px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #282c34;
+  }
+  
+.title {
+    font-weight: bold;
+    font-size: large;
+  }
+  
+.year {
+    font-size: smaller;
+    padding: 0.25rem;
+  }
+
+.movieRatings {
+    margin-bottom: 10px;
+  }
+
+.ratingText {
+    font-weight: bold;
+  }
+
+/* Pop-up summary of movie */
+
+.movieOverview {
+    transform: translateY(100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:white;
+    opacity: 90%;
+    padding: 10px;
+    overflow: auto;
+    transition: 0.3s;
+}
+
+.synopsisOverview {
+    font-size: smaller;
+    padding: 5px;
+}
+
+.movieCard:hover .movieOverview {
+    transform: translateY(0%);
+}
